@@ -1,0 +1,1 @@
+Aku bikin buat cintyaa
