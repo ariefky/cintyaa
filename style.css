@@ -1,0 +1,56 @@
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+p {
+  margin: 0 0;
+  position: absolute;
+  font: 16px Verdana;
+  color: #eee;
+  height: 25px;
+  top: calc(100vh - 30px);
+  text-shadow: 0 0 2px white;
+}
+p a {
+  text-decoration: none;
+  color: #aaa;
+}
+span {
+  font-size: 11px;
+}
+p > a:first-of-type {
+  font-size: 20px;
+}
+body {
+  overflow: hidden;
+}
+
+.button-container {
+  position: fixed;
+  bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.button-container button {
+  padding: 14px 30px;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(45deg, #ff4f9a, #ff85b3);
+  color: white;
+  font-size: 18px;
+  font-family: Verdana, sans-serif;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
+}
+
+.button-container button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(255, 105, 180, 0.9);
+}
